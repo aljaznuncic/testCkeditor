@@ -1,0 +1,13 @@
+<div>
+    <h1>CKEDITOR SOURCE UPDATE DEMO!</h1>
+    <h2>SOURCE</h2>
+    {{ model.editorData }}
+    <hr/>
+    <button (click)="updateSource()">UPDATE SOURCE</button>
+    <h2>EDITOR</h2>
+        <ckeditor #ckEditor
+                [(ngModel)]="model.editorData"
+                [editor]="Editor"
+                >
+        </ckeditor>
+</div>
